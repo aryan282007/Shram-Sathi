@@ -64,7 +64,7 @@ function App() {
     setSearchParams(formData);
 
     try {
-      const response = await fetch('http://localhost:5000/api/get-schemes', {
+      const response = await fetch('/api/get-schemes', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
